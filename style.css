@@ -1,0 +1,199 @@
+/* 
+   Colours used:
+   #16161A  page background
+   #1F1F26  cards and code blocks
+   #25252D  inline code
+   #2E2E38  light borders
+   #3A3A46  stronger borders
+   #E6E4E1  main text
+   #9A98A0  muted text
+   #B3263A  dark red (borders and button)
+   #E5647A  light red (links and headings)
+*/
+
+/* ---------- Page ---------- */
+@font-face {
+  font-family: Futura;
+  src: url("../fonts/Futura\ Book\ font.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Futura-Bold;
+  src: url("../fonts/Futura Extra Black font.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+body {
+    font-family: Futura;
+    background-color: #16161A;
+    color: #E6E4E1;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Keep all content in one centred column */
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------- Headings ---------- */
+
+h1 {
+    font-family: Futura-Bold;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: Futura;
+    color: #E5647A;
+    font-size: 28px;
+    border-bottom: 2px solid #B3263A;
+    padding-bottom: 8px;
+    margin-top: 48px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+/* Process stage titles inside a project */
+h4 {
+    font-size: 18px;
+    margin-top: 28px;
+    margin-bottom: 4px;
+}
+
+/* ---------- Text ---------- */
+
+header p {
+    color: #9A98A0;
+    font-size: 18px;
+}
+
+small {
+    color: #9A98A0;
+    font-size: 14px;
+}
+
+a {
+    color: #E5647A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    margin-right: 18px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin: 6px 0;
+}
+
+code {
+    font-family: Consolas, monospace;
+    background-color: #25252D;
+    padding: 1px 6px;
+    border-radius: 3px;
+}
+
+pre {
+    background-color: #1F1F26;
+    border: 1px solid #2E2E38;
+    border-radius: 5px;
+    padding: 14px;
+    overflow-x: auto;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* ---------- Project description cards ---------- */
+
+article {
+    background-color: #1F1F26;
+    border-left: 4px solid #B3263A;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+article small {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Project images. Replace the placeholder files with your own. */
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+
+/* ---------- Table ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #3A3A46;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1F1F26;
+}
+
+/* ---------- Button ---------- */
+
+button {
+    font-size: 16px;
+    background-color: #B3263A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D14059;
+}
+
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* Visible outline for keyboard users */
+a:focus, button:focus {
+    outline: 3px solid #E5647A;
+    outline-offset: 2px;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    color: #9A98A0;
+    font-size: 14px;
+    margin-top: 60px;
+}

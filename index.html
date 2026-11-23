@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide | Ryan Chuang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Style Guide</h1>
+    <p>IAT339 portfolio by Ryan Chuang.</p>
+    <nav>
+        <a href="#colours">Colours</a>
+        <a href="#typography">Typography</a>
+        <a href="#links-buttons">Links and buttons</a>
+        <a href="#bio">Bio</a>
+        <a href="#everfade">Everfade</a>
+        <a href="#dataviz">Data Visualization</a>
+        <a href="#contact">Contact/Git</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="colours">
+        <h2>Colours</h2>
+        <p>A dark grey background with off-white text, and one red for emphasis. Red is used only for links, headings and borders.</p>
+        <table>
+            <tr>
+                <th>Sample</th>
+                <th>Name</th>
+                <th>Hex</th>
+                <th>Used for</th>
+            </tr>
+            <tr>
+                <td style="background-color: #16161A"></td>
+                <td>Background</td>
+                <td>#16161A</td>
+                <td>The page</td>
+            </tr>
+            <tr>
+                <td style="background-color: #1F1F26"></td>
+                <td>Card</td>
+                <td>#1F1F26</td>
+                <td>Project descriptions, code</td>
+            </tr>
+            <tr>
+                <td style="background-color: #E6E4E1"></td>
+                <td>Text</td>
+                <td>#E6E4E1</td>
+                <td>Body text</td>
+            </tr>
+            <tr>
+                <td style="background-color: #9A98A0"></td>
+                <td>Muted text</td>
+                <td>#9A98A0</td>
+                <td>Captions and details</td>
+            </tr>
+            <tr>
+                <td style="background-color: #B3263A"></td>
+                <td>Dark red</td>
+                <td>#B3263A</td>
+                <td>Borders and buttons</td>
+            </tr>
+            <tr>
+                <td style="background-color: #E5647A"></td>
+                <td>Light red</td>
+                <td>#E5647A</td>
+                <td>Links and headings</td>
+            </tr>
+        </table>
+        <p>The light red is used for any red text because the dark red is too faint to read at small sizes on a dark background.</p>
+    </section>
+
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>All text is Futura. Page titles are 40px, section headings 28px, project titles 22px and body text 16px.</p>
+        <h3>Project title</h3>
+        <small>Details like the course and tools go here in muted text</small>
+        <p>Body text has a generous line height so paragraphs are easy to read. Use <strong>bold</strong> for key terms, <em>italics</em> for emphasis and <code>code</code> for anything technical.</p>
+        <ul>
+            <li>Lists use square bullets</li>
+            <li>Keep each item short</li>
+            <li>Keep lines under about 80 characters</li>
+        </ul>
+    </section>
+
+    <section id="links-buttons">
+        <h2>Links and buttons</h2>
+        <p>Links are light red and get an underline on hover. Here is an <a href="#bio">example link</a>.</p>
+        <button>Primary button</button>
+        <button disabled>Disabled button</button>
+        <br>
+        <h3>Code:</h3>
+        <code>&lt;a href="#bio"&gt;example link&lt;/a&gt;</code>
+        <br>
+        <code>&lt;button&gt;Primary Button&lt;/button&gt;</code>
+        <br>
+        <code>&lt;button disabled&gt;Disabled Button&lt;/button&gt;</code>
+    </section>
+
+    <section id="bio">
+        <h2>Bio</h2>
+        <p>I am a third-year Interactive Arts and Technology student at Simon Fraser University. I work across 3d modeling, animation, and data visualization, and I care most about characters and stories.</p>
+        <p>On the animation side, I have worked through the production pipeline on Everfade, a group animation made in Maya. I handled storyboarding, sketches, 3d modeling, UV mapping, rigging, animating, and rendering. I learned Maya in class and taught myself Blender.</p>
+        <p>On the technical side, I code visualizations with SVG and Vega-Lite, which I learned in IAT355: Data Visualization. Drawing and coding both come down to deciding what a viewer needs to see and showing it clearly.</p>
+    </section>
+
+    <section id="everfade">
+        <h2>Everfade</h2>
+        <article>
+            <small>Group animation, IAT343, Maya</small>
+            <img src="imgs/Everfade.webp" alt="Everfade Project Title Image">
+            <p>A 4.5 minute animation about a knight who travels to a church to avenge his murdered wife. I worked on storyboarding, 3D modeling, UV mapping, rigging, animating and rendering.</p>
+            <ul>
+                <li><strong>Team:</strong> 5 people</li>
+                <li><strong>Tool:</strong> Maya</li>
+                <li><strong>Runtime:</strong> about 4.5 minutes</li>
+            </ul>
+            <p><a href="https://youtu.be/hZL53lao624?si=yV737S-PtLg8RbCI" target="_blank">Watch the final animation</a></p>
+
+            <h4>1. Storyboarding</h4>
+            <p>I drew each scene so it could be explained in one sentence, and made sure the frames flowed into each other like comic panels.</p>
+            <img src="imgs/storyboard2.webp" alt="Storyboard Image">
+
+            <h4>2. 3D modeling and UV mapping</h4>
+            <p>I modeled the throne and church benches, then did about 80% of the UV mapping, slicing each model into flat pieces my teammates could draw textures over.</p>
+            <img src="imgs/throne.webp" alt="Throne Model View">
+
+            <h4>3. Rigging</h4>
+            <p>I rigged all three characters by building a poseable skeleton inside each one, so the skin bends the way a body would.</p>
+            <img src="imgs/rig1.webp" alt="Image of model rig">
+
+            <h4>4. Animating and rendering</h4>
+            <p>Each member animated a different scene in the school lab. Rendering took about 40 minutes for every 5 seconds, so we borrowed up to 7 computers at once.</p>
+            <img src="imgs/animating2.webp" alt="Image of a animation frame">
+
+            <h4>What I would change</h4>
+            <p>We ran short on time, so we cut some story scenes and the pacing feels a little rushed.</p>
+        </article>
+    </section>
+
+    <section id="dataviz">
+        <h2>Data Visualization</h2>
+        <article>
+            <small>Course work, IAT355, SVG and Vega-Lite</small>
+            <p>Charts coded to answer questions about a video game sales dataset.</p>
+            <ul>
+                <li><strong>Tools:</strong> JavaScript, SVG, D3, Vega-Lite</li>
+                <li><strong>Data:</strong> Video Game Sales Dataset</li>
+            </ul>
+            <p><a href="#">View the charts</a></p>
+
+            <h4>1. Start with a question</h4>
+            <p>Each chart began as a question, such as which platform sells the most Action games.</p>
+            <img src="imgs/Vis.webp" alt="Image of Which Platform Sold the Most Action Games Sold Chart">
+
+            <h4>2. Draw it by hand in SVG</h4>
+            <p>I built a bar chart with a loop that creates one rectangle per year, to learn what a chart is underneath: shapes placed on a grid.</p>
+            <img src="imgs/SVG1.webp" alt="SVG bar chart">
+
+            <h4>3. Switch to Vega-Lite</h4>
+            <p>Vega-Lite describes a chart as data, transformations and encodings, which let me build eight charts much faster.</p>
+            <img src="imgs/VegaLite.webp" alt="Vega-Lite chart code">
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact/Git</h2>
+        <p>Email: <a href="mailto:Chzryan@gmail.com">Chzryan@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Chz00/IAT339Portfolio">https://github.com/Chz00/IAT339Portfolio</a></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>IAT339 style guide by Ryan Chuang. Colours and layout are set in style.css.</p>
+</footer>
+
+</body>
+</html>
